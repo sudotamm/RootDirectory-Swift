@@ -7,30 +7,6 @@
 //
 
 import UIKit
-// FIXME: comparison operators with optionals were removed from the Swift Standard Libary.
-// Consider refactoring the code to use the non-optional operators.
-fileprivate func < <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
-  switch (lhs, rhs) {
-  case let (l?, r?):
-    return l < r
-  case (nil, _?):
-    return true
-  default:
-    return false
-  }
-}
-
-// FIXME: comparison operators with optionals were removed from the Swift Standard Libary.
-// Consider refactoring the code to use the non-optional operators.
-fileprivate func > <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
-  switch (lhs, rhs) {
-  case let (l?, r?):
-    return l > r
-  default:
-    return rhs < lhs
-  }
-}
-
 
 /*
  0 - 标识使用root vc = PannelViewController
@@ -49,29 +25,25 @@ let AppDownloadUrl = "http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoft
 let MaxCacheSize = 500*1024*1024
 let MainProjColor = UIColor(red: 40.0/255, green: 60.0/255, blue: 84.0/255, alpha: 1.0)
 
-//External Strings
-let NetWorkErrorString = "网络错误"
-let AllDataLoaded = "已加载完所有数据"
-
 //External Methods
 func DocumentFolder() -> String{
     return NSHomeDirectory() + "/Documents/"
 }
 
 func IsIPad() -> Bool{
-    return UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.pad
+    return UI_USER_INTERFACE_IDIOM() == .pad
 }
 
 func IsIos7Later() -> Bool{
-    return Float(UIDevice.current.systemVersion) > 7.0
+    return Float(UIDevice.current.systemVersion) ?? 0.0 > 7.0
 }
 
 func IsIos8Later() -> Bool{
-    return Float(UIDevice.current.systemVersion) > 8.0
+    return Float(UIDevice.current.systemVersion) ?? 0.0 > 8.0
 }
 
 func IsIos9Later() -> Bool{
-    return Float(UIDevice.current.systemVersion) > 9.0
+    return Float(UIDevice.current.systemVersion) ?? 0.0 > 9.0
 }
 
 func Is3_5Inch() -> Bool{
