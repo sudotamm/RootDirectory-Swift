@@ -1,8 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Start View Controller-->
@@ -21,7 +25,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Gf2-fD-Dby" firstAttribute="bottom" secondItem="qnG-cr-MyU" secondAttribute="top" id="NWK-lg-ekU"/>
                             <constraint firstAttribute="trailing" secondItem="Gf2-fD-Dby" secondAttribute="trailing" id="enU-Cp-i5P"/>
@@ -29,7 +33,6 @@
                             <constraint firstItem="Gf2-fD-Dby" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="sCT-bs-Hs3"/>
                         </constraints>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="startImageView" destination="Gf2-fD-Dby" id="Pd1-rx-tUe"/>
                         <segue destination="45c-aw-2hg" kind="show" identifier="StartToPannel" id="B1j-c8-QUU"/>
@@ -45,7 +48,6 @@
         <scene sceneID="ace-QY-yMa">
             <objects>
                 <navigationController storyboardIdentifier="RootNaviViewController" id="wfJ-hW-Bx6" customClass="RootNaviViewController" customModule="RootDirectory" customModuleProvider="target" sceneMemberID="viewController">
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="QLj-Ku-lda">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -56,7 +58,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FEN-l9-kIb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-725.5" y="-664.5"/>
+            <point key="canvasLocation" x="-532" y="-1095"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="upW-G2-lIv">
@@ -69,21 +71,19 @@
                     <view key="view" contentMode="scaleToFill" id="g38-AL-26a">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="cWE-ps-9aG"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Ql-K9-ihf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-215.5" y="-664.5"/>
+            <point key="canvasLocation" x="230" y="-1095"/>
         </scene>
         <!--设置-->
         <scene sceneID="SeR-Vj-5P5">
             <objects>
                 <navigationController id="9mr-iX-xke" customClass="RootNaviViewController" customModule="RootDirectory" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="设置" id="Ium-wN-OsK"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="kR5-SU-ZvQ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -94,7 +94,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="To2-kf-OcJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-150.5" y="974.5"/>
+            <point key="canvasLocation" x="230" y="400"/>
         </scene>
         <!--Setting View Controller-->
         <scene sceneID="EMr-7u-YA8">
@@ -107,21 +107,19 @@
                     <view key="view" contentMode="scaleToFill" id="MQK-lY-bZh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="xst-QB-iCI"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e0d-65-WKh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="446.5" y="980.5"/>
+            <point key="canvasLocation" x="972" y="400"/>
         </scene>
         <!--首页-->
         <scene sceneID="ARy-zS-zpF">
             <objects>
                 <navigationController id="daO-BB-62K" customClass="RootNaviViewController" customModule="RootDirectory" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="首页" id="aru-gj-Epm"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="D0x-s5-STc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -132,7 +130,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SN1-Af-XtI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-150.5" y="206.5"/>
+            <point key="canvasLocation" x="230" y="-367"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="8he-LK-RXW">
@@ -145,25 +143,23 @@
                     <view key="view" contentMode="scaleToFill" id="Chc-4C-VlP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="q2C-jb-Nrb"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ku2-6Q-K42" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="450.5" y="124.5"/>
+            <point key="canvasLocation" x="972" y="-367.46626686656674"/>
         </scene>
         <!--Root Tab Bar View Controller-->
         <scene sceneID="8pB-Ft-gBi">
             <objects>
                 <tabBarController storyboardIdentifier="RootTabBarViewController" id="QnN-kl-49a" customClass="RootTabBarViewController" customModule="RootDirectory" customModuleProvider="target" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="Yey-O7-Pj4">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="daO-BB-62K" kind="relationship" relationship="viewControllers" id="e7a-jH-XHw"/>
@@ -172,7 +168,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RwM-8P-0Pc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-785.5" y="616.5"/>
+            <point key="canvasLocation" x="-532" y="37"/>
         </scene>
         <!--Pannel View Controller-->
         <scene sceneID="K5F-l9-aYD">
@@ -185,14 +181,13 @@
                     <view key="view" contentMode="scaleToFill" id="ODP-3f-XIz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="0.43976953070000002" blue="0.31326504170000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="0.43976953070000002" blue="0.31326504170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="Til-y3-JeC"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GB2-wi-jZQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-725.5" y="-1439.5"/>
+            <point key="canvasLocation" x="-532" y="-1814"/>
         </scene>
     </scenes>
 </document>
