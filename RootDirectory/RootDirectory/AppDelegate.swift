@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RYUtils
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

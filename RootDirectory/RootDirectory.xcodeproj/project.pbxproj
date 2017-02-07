@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47E2539035C053A426E038CC /* Pods_RootDirectory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8C9A5214092E64E05A98823 /* Pods_RootDirectory.framework */; };
 		9401719D1A399D5A0084087D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 947655D51A393290007DBE24 /* Main.storyboard */; };
 		940AFA3A1A3EB026003D6B93 /* Loading.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 940AFA391A3EB026003D6B93 /* Loading.xcassets */; };
 		940B26251E08C69000627DC7 /* Constant-String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940B26241E08C69000627DC7 /* Constant-String.swift */; };
@@ -21,7 +22,6 @@
 		9419C8341D51D3F50084C7C9 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9419C8331D51D3F50084C7C9 /* StartViewController.swift */; };
 		947656581A393AD6007DBE24 /* Icon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 947656571A393AD6007DBE24 /* Icon.xcassets */; };
 		94A862491D98E7BA00977748 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D502381D531E81007DEE02 /* BaseViewController.m */; };
-		E2E365A3242E56D0B74BF300 /* libPods-RootDirectory.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F40638B2C0B65A0D3D11E3F6 /* libPods-RootDirectory.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,7 +47,7 @@
 		9476565B1A393B1E007DBE24 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		94D502371D531E81007DEE02 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		94D502381D531E81007DEE02 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
-		F40638B2C0B65A0D3D11E3F6 /* libPods-RootDirectory.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RootDirectory.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8C9A5214092E64E05A98823 /* Pods_RootDirectory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RootDirectory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2E365A3242E56D0B74BF300 /* libPods-RootDirectory.a in Frameworks */,
+				47E2539035C053A426E038CC /* Pods_RootDirectory.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,7 +184,7 @@
 		94A0F2041A52726B00A147EC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F40638B2C0B65A0D3D11E3F6 /* libPods-RootDirectory.a */,
+				F8C9A5214092E64E05A98823 /* Pods_RootDirectory.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

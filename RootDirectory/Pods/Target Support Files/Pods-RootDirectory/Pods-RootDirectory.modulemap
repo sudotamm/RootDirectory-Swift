@@ -1,0 +1,6 @@
+framework module Pods_RootDirectory {
+  umbrella header "Pods-RootDirectory-umbrella.h"
+
+  export *
+  module * { export * }
+}

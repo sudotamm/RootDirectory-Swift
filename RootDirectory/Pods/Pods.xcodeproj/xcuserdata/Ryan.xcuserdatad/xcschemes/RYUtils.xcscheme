@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '5C087B2FD4AB5CD2A6150DB6CB001D08'
+               BlueprintIdentifier = '733413D41396EBD0231C1B526C3B7FBA'
                BlueprintName = 'RYUtils'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libRYUtils.a'>
+               BuildableName = 'RYUtils.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
