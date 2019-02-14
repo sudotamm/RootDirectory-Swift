@@ -1,12 +1,16 @@
 PODS:
-  - RYUtils (4.4.0)
+  - RYUtils (5.0.0)
 
 DEPENDENCIES:
   - RYUtils
 
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - RYUtils
+
 SPEC CHECKSUMS:
-  RYUtils: 9138b39ffe17811e658f648b64cf67d8f609c762
+  RYUtils: 5de600dc4f9a25eaba2ce0c74c84f9d7b4f2095f
 
 PODFILE CHECKSUM: e475a1781a097f18b8c215a41fb698706cab9422
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.5.0

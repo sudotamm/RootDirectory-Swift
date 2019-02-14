@@ -24,8 +24,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     lazy var rootTabBarViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "RootTabBarViewController")
     
     //MARK: Public methods
-    func showPannelView(_ notification: Notification){
-        self.window!.addAnimation(withType: kCATransitionFade, subtype:nil)
+    @objc func showPannelView(_ notification: Notification){
+        self.window!.addAnimation(withType: CATransitionType.fade.rawValue, subtype:nil)
         if(RootTemplateType == 0){
             self.window!.rootViewController = self.pannelViewController
         }
@@ -42,7 +42,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     //MARK: UIApplicationDelegate methods
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         NotificationCenter.default.addObserver(self, selector: #selector(AppDelegate.showPannelView(_:)), name: NSNotification.Name(rawValue: ShowPannelViewNotification), object: nil)
         self.window!.tintColor = MainProjColor;
@@ -57,8 +57,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationDidEnterBackground(_ application: UIApplication) {
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
-    RYAppBackgroundConfiger.clearAllCaches(whenBiggerThanSize: Double(MaxCacheSize))
-    RYAppBackgroundConfiger.preventFilesFromBeingBackedupToiCloud(withSystemVersion: UIDevice.current.systemVersion)
+        RYAppBackgroundConfiger.clearAllCaches(whenBiggerThanSize: Double(MaxCacheSize))
+        RYAppBackgroundConfiger.preventFilesFromBeingBackedupToiCloud(withSystemVersion: UIDevice.current.systemVersion)
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {
@@ -72,7 +72,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
 }
 

@@ -1,8 +1,15 @@
 #ifdef __OBJC__
 #import <UIKit/UIKit.h>
+#else
+#ifndef FOUNDATION_EXPORT
+#if defined(__cplusplus)
+#define FOUNDATION_EXPORT extern "C"
+#else
+#define FOUNDATION_EXPORT extern
+#endif
+#endif
 #endif
 
-#import "MBProgressHUD.h"
 #import "NSArray+RYLocationTransform.h"
 #import "NSDate+RYAdditions.h"
 #import "NSObject+RYPropertyList.h"
@@ -15,6 +22,7 @@
 #import "RYDownloaderManager.h"
 #import "RYHUDManager.h"
 #import "RYImageDownloader.h"
+#import "RYMBProgressHUD.h"
 #import "RYMediaPicker.h"
 #import "RYResponseManager.h"
 #import "RYReverseLocation.h"

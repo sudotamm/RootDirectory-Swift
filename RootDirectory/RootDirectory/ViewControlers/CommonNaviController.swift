@@ -19,7 +19,7 @@ class CommonNaviController: UINavigationController, UINavigationControllerDelega
     //MARK: UINavigationController methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
+        self.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         self.navigationBar.barTintColor = MainProjColor
         self.navigationBar.tintColor = UIColor.white
         
